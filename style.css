@@ -1,0 +1,208 @@
+/*
+Theme Name: Popper Child Theme
+Theme URI: http://bagend.gq
+Description: A child theme of Morten's awesome Popper theme.
+Author: Niko Sum
+Author URI: http://bagend.gq
+Template: popper
+Version: 0.1.0
+*/
+
+@import url("../popper/style.css");
+
+body, .widget {
+    background-color: #2a2c39;
+    color: #e9e9eb;
+}
+
+.site-title {
+    font-weight: 300;
+}
+
+.site-description {
+    font-style: italic;
+}
+
+@media screen and (min-width: 30em) {
+    .entry-meta {
+        margin: 0 -1.8;
+        background-color: pink;
+    }
+}
+
+.sticky::before {
+    display: block;
+    padding: .2em 1em;
+    text-align: right;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 80%;
+    content: "Sticky Post";
+    background-color: hsl(0, 0%, 80%);
+}
+
+.entry-meta,
+#secondary,
+.image-attachment a,
+.sticky::before {
+    background-color: #333646;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+.index-entry-meta a,
+.entry-title,
+.entry-footer span a,
+.wp-caption-text::before,
+.wp-caption-text {
+    color: #E9E9EB;
+}
+
+.page-content a,
+.entry-content a,
+.entry-summary a,
+.comment-content a,
+.entry-footer a:hover,
+.entry-footer a:focus,
+.entry-meta a:hover,
+.entry-meta a:focus,
+.index-entry-meta a:hover,
+.index-entry-meta a:focus,
+.comment-navigation a:hover,
+.comment-navigation a:focus,
+.posts-navigation a:hover,
+.posts-navigation a:focus,
+.post-navigation a:hover,
+.post-navigation a:focus,
+.paging-navigation a:hover,
+.paging-navigation a:focus{
+    border-color: #E9E9EB;
+}
+
+.page-content a:hover,
+.page-content a:focus,
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-summary a:hover,
+.entry-summary a:focus,
+.comment-content a:hover,
+.comment-content a:focus {
+    border-bottom: 3px solid #E9E9EB;
+    box-shadow: inset 0 -3px 0 #E9E9EB;
+}
+
+
+.continue-reading a:hover,
+.continue-reading a:focus,
+.entry-content .continue-reading a:hover,
+.entry-content .continue-reading a:focus {
+    border-color: #E9E9EB;
+    background: hsla(0, 100%, 100%, .1);
+}
+
+@media screen and (min-width: 65em) {
+    .sidebar-right #secondary, .sidebar-left #secondary {
+        background-color: #2A2C39;
+    }
+}
+
+.reply a,
+.comment-form .form-submit input {
+    border-color: #E9E9EB;
+    background-color: #2A2C39;
+    color:  #E9E9EB;
+}
+
+.reply a:hover,
+.reply a:focus,
+.comment-form .form-submit input:hover,
+.comment-form .form-submit input:focus {
+    border-color: #E9E9EB;
+    background-color: #E9E9EB;
+    color: #000;
+}
+
+.posted-on {
+    display: inline-block;
+}
+
+.meta-content .cat-links {
+    display: block;
+}
+
+.index-entry-meta .cat-links {
+    display: inline-block;
+}
+
+@media screen and (min-width: 30em) {
+    .index-entry-meta .posted-on::after {
+        content: "|";
+        padding: 0 1em;
+    }
+}
+
+/* Footer Menu */
+.footer-navigation {
+    margin: -2em auto 4em;
+}
+
+.footer-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-navigation a {
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+    outline: 1px solid #fff;
+}
+
+/*Footer Widgets*/
+#tertiary {
+    display: flex;
+    justify-content: center;
+    margin: -3em 0 4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.widget ul,
+.widget ol,
+.widget_calendar,
+.site-firstletter,
+.site-title,
+.main-navigation,
+.comment-navigation,
+.posts-navigation,
+.post-navigation,
+.paging-navigation,
+.continue-reading a,
+.entry-content .continue-reading a,
+.entry-meta,
+.entry-footer,
+.index-entry-meta,
+.comment-meta,
+.reply a,
+.comment-form,
+.wp-caption,
+.gallery-caption,
+.site-footer {
+	font-family: 'Oswald', sans-serif;
+}
